@@ -1,0 +1,260 @@
+:root {
+	--White: #fff;
+	--Skye: #63E4FF; 
+	--Super-black: #0F1010; 
+	--black: #1B1F1F;
+	--text-contrast: #838383;  
+
+	--titles: 'Open Sans', sans-serif;
+	--parrafo: 'Source Sans Pro', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos predefinidos */
+
+button {
+	width: 300px;
+	height: 65px;
+	background-color: var(--black);
+	color: var(--White);
+	margin-top: 20px;
+	border: 0;
+	font-size: 20px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: var(--Super-black);
+}
+button:active {
+	background-color: var(--text-contrast);
+}
+
+/* Estilos del header */
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	height: 68px;
+	align-items: center;
+}
+header .title-header {
+	margin-left: 60px;
+	font-size: 40px;
+	font-family: var(--titles);
+	font-weight: 400;
+}
+header .container-links {
+	display: flex;
+	justify-content: right;
+	margin-right: 60px;
+	gap: 20px;
+}
+header .container-links a {
+	font-size: 20px;
+	font-family: var(--titles);
+	text-decoration: none;
+	color: var(--Super-black);
+}
+header .container-links a:hover {
+	text-decoration: underline;
+}
+
+/* Estilos del scrollbar */
+
+body::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+	background: var(--White);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+	background-color: var(--text-contrast);    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 2px solid var(--White);  /* creates padding around scroll thumb */
+}
+
+/* Estilos seccion 1 ----------------------------------------- */
+
+.seccion-1 {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+.seccion-1 .seccion-1__seg-1 {
+	width: 80%;
+}
+.seccion-1 .seccion-1__seg-1 h1 {
+	font-size: 75px;
+	font-family: var(--titles);
+	font-weight: 600;
+	align-items: center;
+}
+.seccion-1 .seccion-1__seg-1 p {
+	font-size: 40px;
+	font-family: var(--parrafo);
+	font-weight: 400;
+}
+.seccion-1 .seccion-1__seg-1 .seg-1__redes {
+	display: flex;
+	gap: 10px;
+	margin: 60px 0 0 20px;
+	padding: 5px;
+}
+.seccion-1 .seccion-1__seg-1 .seg-1__redes a:hover {
+	transition: 0.3s;
+}
+.seccion-1 .seccion-1__seg-1 .seg-1__redes a:hover {
+	background-color: var(--text-contrast);
+	border-radius: 100%;
+}
+.seccion-1 .seccion-1__seg-1 .seg-1__redes .redes {
+	width: 50px;
+}
+
+
+
+.seccion-1 .seccion-1__seg-2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.seccion-1 .seccion-1__seg-2 img {
+	width: 80%;
+}
+
+/* Estilos seccion 2 ------------------------------------------------------------*/
+
+.seccion-2 {
+	background-color: var(--black);
+	padding: 0 15% 0 15%;
+}
+.seccion-2__seg-1 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+.seccion-2__seg-1 .semi-bloque-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	background-color: var(--White);
+	padding: 15px;
+}
+.seccion-2__seg-1 .semi-bloque-info img {
+	width: 60px;
+}
+.seccion-2__seg-1 .semi-bloque-info h3 {
+	font-family: var(--titles);
+	font-weight: 600;
+	font-size: 22px;
+	margin: 10px 0;
+	text-align: center;
+}
+.seccion-2__seg-1 .semi-bloque-info p {
+	font-family: var(--parrafo);
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	color: var(--text-contrast);
+}
+
+
+.seccion-2 .seccion-2__seg-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 80px 0;
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 h2 {
+	font-family: var(--titles);
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 50px;
+	color: var(--White);
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 p {
+	width: 90%;
+	margin-top: 20px;
+	font-family: var(--parrafo);
+	font-size: 25px;
+	font-weight: 400;
+	color: var(--text-contrast);
+}
+.seccion-2 .seccion-2__seg-2 .item2 {
+	display: flex;
+	justify-content: right;
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 ul{
+	width: 95%;
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 ul li {
+	font-family: var(--parrafo);
+	font-size: 27px;
+	font-weight: 400;
+	color: var(--White);
+	list-style: none;
+	background-image: url(./resources/Iconos-svg/circle-skye.svg);
+	background-position: 0 12px;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	padding-left: 20px;
+}
+
+/* Estilos seccion 3 -----------------------------------------------------*/
+
+.seccion-3 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0 15% 0 15%;
+	/* justify-items: right; */
+}
+.seccion-3 .seccion-3__seg-1 {
+	width: 85%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	margin: 80px 0;
+	gap: 15px;
+}
+.seccion-3 .seccion-3__seg-1 div img {
+	width: 50px;
+}
+.seccion-3 .seccion-3__seg-1 div h5 {
+	font-size: 15px;
+	font-family: var(--titles);
+	margin-bottom: 10px;
+}
+.seccion-3 .seccion-3__seg-2 {
+	display: flex;
+	flex-direction: column;
+	margin: 80px 0 80px 50px;
+}
+.seccion-3 .seccion-3__seg-2 h2 {
+	font-size: 50px;
+	font-family: var(--titles);
+	font-weight: 600;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.seccion-3 .seccion-3__seg-2 .parrafo-prin {
+	font-size: 25px;
+	font-family: var(--parrafo);
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.seccion-3 .seccion-3__seg-2 .parrafo-sec {
+	font-size: 15px;
+	font-family: var(--parrafo);
+	font-weight: 400;
+	color: var(--text-contrast);
+}
