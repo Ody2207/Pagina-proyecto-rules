@@ -4,7 +4,6 @@
 	--Super-black: #0F1010; 
 	--black: #1B1F1F;
 	--text-contrast: #838383;  
-
 	--titles: 'Open Sans', sans-serif;
 	--parrafo: 'Source Sans Pro', sans-serif;
 }
@@ -41,6 +40,10 @@ header {
 	grid-template-columns: 1fr 2fr;
 	height: 68px;
 	align-items: center;
+	transition: all 0.3s;
+}
+header:hover {
+	background-color: rgb(221, 221, 221);
 }
 header .title-header {
 	margin-left: 60px;
@@ -327,5 +330,157 @@ body::-webkit-scrollbar-thumb {
 .seccion-5 {
 	width: 100%;
 	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+	background-image: url(./resources/imagenes/montaña-blanca-mediana.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.seccion-5__seg-1 {
+	width: 60%;
+	height: 400px;
+	background-color: var(--Super-black);
+}
+.seccion-5__seg-1 h2 {
+	margin: 30px;
+	font-size: 40px;
+	font-family: var(--titles);
+	color: var(--White);
+}
+.seccion-5__seg-1 .seccion-info {
+	margin: 0 0px 20px 30px;
+}
+.seccion-5__seg-1 .seccion-info h5 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-family: var(--titles);
+	color: var(--White);
+}
+.seccion-5__seg-1 .seccion-info p {
+	font-size: 15px;
+	font-family: var(--titles);
+	color: var(--text-contrast);
+}
+/* formulario */
+.seccion-5__seg-2 {
 	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid var(--White);
+}
+.seccion-5__seg-2 form {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+} 
+.seccion-5__seg-2 .form {
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	font-size: 18px;
+	font-family: var(--parrafo);
+	margin-bottom: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid var(--White);
+	color: var(--White);
+	transition: 0.5s;
+	outline: none;
+} 
+.seccion-5__seg-2 .form:focus {
+	background-color: #1b1a1a4f;
+	border-radius: 5px;
+	border: 1px solid var(--White);
+} 
+.seccion-5__seg-2 .form::placeholder {
+	font-family: var(--parrafo);
+	font-size: 18px;
+	font-weight: 100;
+	color: var(--White);
+} 
+.seccion-5__seg-2 form .input-email-number{
+	display: flex;
+	gap: 30px;
+	width: 100%;
+} 
+.seccion-5__seg-2 form .item-4 {
+	height: 140px;
+} 
+.seccion-5__seg-2 textarea {
+	resize: none;
+} 
+.btn-form {
+	width: 100%;
+	background-color: var(--Super-black);
+}
+.item-3[type=number]::-webkit-inner-spin-button,
+.item[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none; 
+}
+
+/* Footer class ----------------------------------------------------------- */
+
+footer {
+	width: 100%;
+	height: 50vh;
+	padding: 50px 10% 0 10%;
+	background-color: var(--Super-black);
+}
+.container-info {
+	display: flex;
+	width: 100%;
+}
+.section-info_1 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 50%;
+}
+.section-info_1 h3 {
+	color: var(--White);
+	font-size: 25px;
+	font-family: var(--titles);
+}
+.section-info_1 h4 {
+	font-size: 25px;
+	font-family: var(--titles);
+	color: var(--White);
+}
+.section-info_1 p {
+	font-size: 17px;
+	font-family: var(--parrafo);
+	color: var(--text-contrast);
+}
+.section-info_2 {
+	width: 50%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	gap: 10px;
+}
+.section-info_2 img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50px;
+	padding: 10px;
+	background-color: var(--black);
+}
+.container-registrada {
+	width: 100%;
+	height: 5vh;
+	margin-top: 20px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.container-registrada p {
+	font-size: 15px;
+	font-family: var(--titles);
+	color: var(--text-contrast);
 }

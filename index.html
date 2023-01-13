@@ -17,8 +17,8 @@
 		<p class="title-header">RULES</p>
 
 		<div class="container-links">
-			<a href="">CONTÁCTANOS</a>
-			<a href="">BLOG</a>
+			<a href="#contactanos">CONTÁCTANOS</a>
+			<a href="#">BLOG</a>
 		</div>
 	</header>
 
@@ -28,16 +28,16 @@
 				<h1>Rules</h1>
 				<p>Climatización y Mantenimiento Industrial Rules S.A de C.V</p>
 	
-				<div class="seg-1__redes">
+				<!-- <div class="seg-1__redes">
 					<a href="">
 						<img class="redes insta" src="./resources/Iconos-svg/instagram.svg" alt="">
 					</a>
 					<a href="">
 						<img class="redes facebook" src="./resources/Iconos-svg/facebook-black.svg" alt="">
 					</a>
-				</div>
+				</div> -->
 	
-				<button>Contáctanos</button>
+				<!-- <button>Contáctanos</button> -->
 			</div>
 			<div class="seccion-1__seg-2">
 				<img src="./resources/svg/undraw_Reading_time_re_phf7.png" alt="">
@@ -130,63 +130,83 @@
 				</div>
 
 				<div class="container-proyecto">
-					<img src="./resources/imagenes/Proyecto-1.png" alt="">
+					<img src="./resources/imagenes/Proyecto-1.jpg" alt="">
 					<p>Suministro de equipo Chiller 150 TR</p>
 				</div>
 				<div class="container-proyecto">
-					<img src="./resources/imagenes/Proyecto-2.png" alt="">
+					<img src="./resources/imagenes/Proyecto-2.jpg" alt="">
 					<p>Suministro de equipo Chiller 150 TR</p>
 				</div>
 			</div>
 			<div class="seccion-4-seg-2">
 				<div class="container-proyecto">
-					<img src="./resources/imagenes/Proyecto3.png" alt="">
+					<img src="./resources/imagenes/Proyecto3.jpg" alt="">
 					<p>Suministro de ventiladores </p>
 				</div>
 				<div class="container-proyecto">
-					<img src="./resources/imagenes/Proyecto-4.png" alt="">
+					<img src="./resources/imagenes/Proyecto-4.jpg" alt="">
 					<p>Línea 3 del Tren Ligero en Guadalajara</p>
 				</div>
 				<div class="container-proyecto">
-					<img src="./resources/imagenes/Proyecto-5.png" alt="">
+					<img src="./resources/imagenes/Proyecto-5.jpg" alt="">
 					<p>Edificio del centro de Justicia en Cintalapa</p>
 				</div>
 			</div>
 		</section>
 
-		<section class="seccion-5">
+		<section class="seccion-5" id="contactanos">
 			<div class="seccion-5__seg-1">
 				<h2>Contáctanos</h2>
 
-				<div class="seccion-email">
+				<div class="seccion-info">
 					<h5>E-MAIL</h5>
 					<p>joseluis@climatizacionrules.mx</p>
 					<p>esoluis79@gmail.com</p>
 				</div>
-				<div class="seccion-number">
+				<div class="seccion-info">
 					<h5>NÚMERO</h5>
 					<p>55 41330657</p>
 					<p>55 3139 2190</p>
 				</div>
 			</div>
-			<div class="seccion-5__seg-1">
-				<h1>FormSubmit Demo</h1>
+			<div class="seccion-5__seg-2">
 				<form target="_blank" action="https://formsubmit.co/roes2207@gmail.com" method="POST">
-					<input type="text" name="name" class="form-control" placeholder="Full Name" required>
-					<input type="email" name="email" class="form-control" placeholder="Email Address" required>
-					<input type="number" name="number" class="form-control" placeholder="Numero" required>
-					<textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-					<button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+					<input type="text" name="name" class="item-1 form" placeholder="Nombre" required>
+					<div class="input-email-number">
+						<input type="number" name="number" class="item-3  form" placeholder="Teléfono" required>
+						<input type="email" name="email" class="item-2  form" placeholder="Correo" required>
+					</div>
+					<textarea placeholder="¿Qué es lo que nesecitas?" class="item-4  form" name="message" rows="10" required></textarea>
+					<button type="submit" class="btn btn-lg btn-dark btn-block btn-form">ENVIAR</button>
 				</form>
 			</div>
 		</section>
-
-		<section></section>
-		
 	</body>
 
 	<footer>
+		<div class="container-info">
+			<div class="section-info_1">
+				<h3>CONTACTO</h3>
+				<div>
+					<h4>E-MAIL</h4>
+					<p>joseluis@climatizacionrules.mx</p>
+					<p>esoluis79@gmail.com</p>
+				</div>
+				<div>
+					<h4>NÚMERO</h4>
+					<p>55 41330657</p>
+					<p>55 3139 2190</p>
+				</div>
+			</div>
+			<div class="section-info_2">
+				<img src="./resources/Iconos-svg/facebook-black.svg" alt="">
+				<img src="./resources/Iconos-svg/instagram.svg" alt="">
+			</div>
+		</div>
 
+		<div class="container-registrada">
+			<p>© 2022 por CLIMATIZACION Y MANTENIMIENTO INDUSTRIAL RULES S.A DE C.V.</p>
+		</div>
 	</footer>
 </body>
 </html>
