@@ -196,15 +196,3 @@ footer {
 	text-align: center;
 }
 
-@media (max-width: 456px) {
-	.seccion-4 {
-		flex-direction: column;
-		height: 250vh;
-	}
-
-	/* Seccion 5 formulario ----------------------------------------- */
-	.seccion-5 {
-	height: 180vh;
-	grid-template-rows: repeat(2, 90vh);
-	
-}

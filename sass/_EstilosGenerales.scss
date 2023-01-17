@@ -1,0 +1,46 @@
+$White: #fff;
+$Skye: #63E4FF;
+$Balck: #1B1F1F;
+$SuperBlack: #0F1010;
+$TextContrast: #838383;
+$FontTitles: 'Open Sans', sans-serif;
+$FontParagraph: 'Source Sans Pro', sans-serif;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// Scroll bar ---------------------------------------------
+body::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+	background: $White;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+	background-color: $TextContrast;    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 2px solid $White;  /* creates padding around scroll thumb */
+}
+
+// Estilos de botones predefinidos -----------------------------------------
+button {
+	width: 300px;
+	height: 65px;
+	background-color: $Balck;
+	color: $White;
+	margin-top: 20px;
+	border: 0;
+	font-size: 20px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $SuperBlack;
+	}
+	&:active {
+		background-color: $TextContrast;
+	}
+}

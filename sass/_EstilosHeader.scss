@@ -1,0 +1,35 @@
+$SuperBlack: #0F1010;
+$TextContrast: #838383;
+$FontTitles: 'Open Sans', sans-serif;
+$FontParagraph: 'Source Sans Pro', sans-serif;
+
+// Estilos del header -------------------------------------
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	height: 68px;
+	align-items: center;
+	transition: all 0.3s;
+
+	.title-header {
+		margin-left: 60px;
+		font-size: 40px;
+		font-weight: 400;
+		font-family: $FontTitles;
+	}
+	.container-links {
+		display: flex;
+		justify-content: right;
+		margin-right: 60px;
+		gap: 20px;
+	}
+	.container-links a {
+		font-size: 20px;
+		text-decoration: none;
+		font-family: $FontTitles;
+		color: $SuperBlack;
+	}
+	.container-links a:hover {
+		text-decoration: underline;
+	}
+}

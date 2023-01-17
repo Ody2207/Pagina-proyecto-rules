@@ -1,0 +1,199 @@
+header {
+  grid-template-columns: 1fr;
+}
+header .title-header {
+  display: none;
+}
+header .container-links {
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+header .container-links a {
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  height: 65px;
+  background-color: var(--black);
+  color: var(--White);
+  margin-top: 20px;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.seccion-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 50vh);
+}
+.seccion-1 .seccion-1__seg-1 h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.seccion-1 .seccion-1__seg-1 p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.seccion-2 {
+  padding: 0 5% 0 5%;
+}
+.seccion-2 .seccion-2__seg-1 {
+  overflow-x: auto;
+  grid-template-columns: repeat(3, 90%);
+  gap: 10px;
+}
+.seccion-2 .seccion-2__seg-1 .semi-bloque-info {
+  margin-top: 30px;
+}
+.seccion-2 .seccion-2__seg-2 {
+  grid-template-columns: 1fr;
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 p {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: justify;
+}
+.seccion-2 .seccion-2__seg-2 .bloque-info__seg-2 ul li {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.seccion-2 .item2 {
+  justify-content: center;
+}
+
+.seccion-3 {
+  grid-template-columns: 1fr;
+}
+.seccion-3 .seccion-3__seg-1 {
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px 0;
+  gap: 15px 20px;
+}
+.seccion-3 .seccion-3__seg-1 div h5 {
+  text-align: center;
+}
+.seccion-3 .seccion-3__seg-1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccion-3 .seccion-3__seg-2 {
+  margin: 40px 0;
+}
+.seccion-3 .seccion-3__seg-2 h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.seccion-3 .seccion-3__seg-2 .parrafo-prin {
+  font-size: 20px;
+  text-align: justify;
+}
+.seccion-3 .seccion-3__seg-2 .parrafo-sec {
+  font-size: 13px;
+  text-align: center;
+}
+
+.seccion-4 {
+  flex-direction: column;
+  height: 260vh;
+}
+.seccion-4 .seccion-4-seg-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10%;
+}
+.seccion-4 .seccion-4-seg-1 h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.seccion-4 .seccion-4-seg-1 .parrafo-info {
+  font-size: 20px;
+  text-align: center;
+}
+.seccion-4 .container-info, .seccion-4 .container-proyecto {
+  margin-bottom: 20px;
+}
+.seccion-4 .container-proyecto p {
+  font-size: 12px;
+}
+.seccion-4 .seccion-4-seg-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10%;
+}
+
+.seccion-5 {
+  height: 150vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 75vh);
+}
+.seccion-5 .seccion-5__seg-1 {
+  width: 90%;
+  margin-top: 30px;
+}
+.seccion-5 .seccion-5__seg-1 h2 {
+  margin: 30px;
+  font-size: 30px;
+}
+.seccion-5 .seccion-5__seg-2 {
+  border-left: none;
+}
+.seccion-5 .seccion-5__seg-2 form {
+  width: 80%;
+}
+
+footer {
+  height: 75vh;
+}
+footer .container-info {
+  flex-direction: column;
+}
+footer .container-info h3 {
+  font-size: 20px;
+}
+footer .container-info h4 {
+  font-size: 20px;
+}
+footer .container-info p {
+  font-size: 15px;
+}
+footer .section-info_2 {
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .container-registrada {
+  height: 10vh;
+  margin-top: 45px;
+}
+footer .container-registrada p {
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 456px) {
+  .seccion-4 {
+    flex-direction: column;
+    height: 250vh;
+  }
+  /* Seccion 5 formulario ----------------------------------------- */
+  .seccion-5 {
+    height: 180vh;
+    grid-template-rows: repeat(2, 90vh);
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

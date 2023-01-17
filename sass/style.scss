@@ -1,0 +1,437 @@
+@use 'EstilosGenerales';
+@use 'EstilosHeader';
+
+$White: #fff;
+$Skye: #63E4FF;
+$Balck: #1B1F1F;
+$SuperBlack: #0F1010;
+$TextContrast: #838383;
+$FontTitles: 'Open Sans', sans-serif;
+$FontParagraph: 'Source Sans Pro', sans-serif;
+
+// Syle section 1 ---------------------------------------------------------------
+.seccion-1 {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+
+	.seccion-1__seg-1 {
+		width: 80%;
+
+		h1 {
+			font-size: 75px;
+			font-family: $FontTitles;
+			font-weight: 600;
+			align-items: center;
+		}
+		p {
+			font-size: 40px;
+			font-family: $FontParagraph;
+			font-weight: 400;
+		}
+		.seg-1__redes {
+			display: flex;
+			gap: 10px;
+			margin: 60px 0 0 20px;
+			padding: 5px;
+
+			a:hover {
+				background-color: $TextContrast;
+				border-radius: 100%;
+				transition: 0.3s;
+			}
+
+			.redes {
+				width: 50px;
+			}
+		}
+		
+	}
+	.seccion-1__seg-2 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 80%;
+		}
+	}
+}
+
+// Syle section 2 ---------------------------------------------------------------
+.seccion-2 {
+	background-color: $Balck;
+
+	.container-seccion2 {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 70%;
+	}
+	.seccion-2__seg-1 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+
+		.semi-bloque-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: top;
+			align-items: center;
+			background-color: $White;
+			padding: 15px;
+
+			img {
+				width: 60px;
+			}
+			h3 {
+				font-family: $FontTitles;
+				font-weight: 600;
+				font-size: 22px;
+				margin: 10px 0;
+				text-align: center;
+			}
+			p {
+				font-family: $FontParagraph;
+				font-weight: 400;
+				font-size: 15px;
+				text-align: center;
+				color: $TextContrast;
+			}
+		}
+	}
+	.seccion-2__seg-2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 80px 0;
+
+		.bloque-info__seg-2  {
+			
+			h2 {
+				font-family: $FontTitles;
+				font-size: 50px;
+				font-weight: 600;
+				line-height: 50px;
+				color: $White;
+			}
+			p {
+				width: 90%;
+				margin-top: 20px;
+				font-family: $FontParagraph;
+				font-size: 25px;
+				font-weight: 400;
+				color: $TextContrast;
+			}
+			ul{
+				width: 95%;
+			}
+			ul li {
+				font-family: $FontParagraph;
+				font-size: 27px;
+				font-weight: 400;
+				color: $White;
+				list-style: none;
+				background-image: url(../resources/Iconos-svg/circle-skye.svg);
+				background-position: 0 12px;
+				background-repeat: no-repeat;
+				background-size: 10px;
+				padding-left: 20px;
+			}
+		}
+		.item2 {
+			display: flex;
+			justify-content: right;
+		}
+	}
+}
+
+// Syle section 3 ---------------------------------------------------------------
+.seccion-3 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 70%;
+	margin: 0 auto;
+
+	.seccion-3__seg-1 {
+		width: 85%;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		margin: 80px 0;
+		gap: 15px;
+
+		div img {
+			width: 50px;
+		}
+		div h5 {
+			font-size: 15px;
+			font-family: $FontTitles;
+			margin-bottom: 10px;
+		}
+	}
+	.seccion-3__seg-2 {
+		display: flex;
+		flex-direction: column;
+		margin: 80px 0 80px 50px;
+
+		h2 {
+			font-size: 50px;
+			font-family: $FontTitles;
+			font-weight: 600;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.parrafo-prin {
+			font-size: 25px;
+			font-family: $FontParagraph;
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
+		.parrafo-sec {
+			font-size: 15px;
+			font-family: $FontParagraph;
+			font-weight: 400;
+			color: $TextContrast;
+		}
+	}
+}
+
+// Syle section 4 ---------------------------------------------------------------
+.seccion-4 {
+	width: 100%;
+	height: 130vh;
+	display: flex;
+
+	img {
+		width: 100%;
+		height: 190px;
+	}
+	.seccion-4-seg-1 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 50%;
+		padding-left: 15%;
+		padding-right: 5%;
+		background-color: $Balck;
+
+		h2 {
+			font-size: 50px;
+			font-family: $FontTitles;
+			font-weight: 600;
+			padding-bottom: 10px;
+			color: $White;
+		}
+		.parrafo-info {
+			font-size: 20px;
+			font-family: $FontParagraph;
+			font-weight: 400;
+			color: $TextContrast;
+		}
+		
+	}
+	.seccion-4-seg-2 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 50%;
+		padding-left: 5%;
+		padding-right: 15%;
+		width: 50%;
+		background-color: $SuperBlack;
+		display: flex;
+		flex-direction: column;
+
+		.container-proyecto p {
+			background-color: $Balck;
+		}
+	}
+	.container-info, .container-proyecto  {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 35vh;
+	}
+	.container-proyecto {
+		p {
+			font-family: $FontParagraph;
+			display: flex;
+			align-items: center;
+			height: 30px;
+			padding-left: 10px;
+			background-color: $SuperBlack;
+			color: $TextContrast;
+		}
+	}
+}
+
+// Syle section 4 ---------------------------------------------------------------
+.seccion-5 {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+	background-image: url(../resources/imagenes/montaña-blanca-mediana.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.seccion-5__seg-1 {
+		width: 60%;
+		height: 400px;
+		background-color: $SuperBlack;
+
+		h2 {
+			margin: 30px;
+			font-size: 40px;
+			font-family: $FontTitles;
+			color: $White;
+		}
+		.seccion-info {
+			margin: 0 0px 20px 30px;
+
+			h5 {
+				margin-bottom: 10px;
+				font-size: 18px;
+				font-family: $FontTitles;
+				color: $White;
+			}
+			p {
+				font-size: 15px;
+				font-family: $FontTitles;
+				color: $TextContrast;
+			}
+		}
+	}
+	.seccion-5__seg-2 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 400px;
+		justify-content: center;
+		align-items: center;
+		border-left: 1px solid $White;
+
+		form {
+			width: 70%;
+			display: flex;
+			flex-direction: column;
+
+			.input-email-number{
+				display: flex;
+				gap: 30px;
+				width: 100%;
+			} 
+			.item-4 {
+				height: 140px;
+			} 
+		} 
+		textarea {
+			resize: none;
+		} 
+		.btn-form {
+			width: 100%;
+			background-color: $SuperBlack;
+		}
+		.item-3[type=number]::-webkit-inner-spin-button,
+		.item[type=number]::-webkit-outer-spin-button {
+			-webkit-appearance: none; 
+		}
+		.form {
+			width: 100%;
+			height: 50px;
+			padding: 10px;
+			font-size: 18px;
+			font-family: $FontParagraph;
+			margin-bottom: 30px;
+			background-color: rgba(0, 0, 0, 0);
+			border: none;
+			border-bottom: 1px solid $White;
+			color: $White;
+			transition: 0.5s;
+			outline: none;
+
+			&:focus {
+				background-color: #1b1a1a4f;
+				border-radius: 5px;
+				border: 1px solid $White;
+			} 
+			&::placeholder {
+				font-family: $FontParagraph;
+				font-size: 18px;
+				font-weight: 100;
+				color: $White;
+			} 
+		} 
+	}
+}
+
+// Syle section 5 ---------------------------------------------------------------
+footer {
+	width: 100%;
+	height: 50vh;
+	padding: 50px 10% 0 10%;
+	background-color: $SuperBlack;
+
+	.container-info {
+		display: flex;
+		width: 100%;
+
+		.section-info_1 {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			width: 50%;
+
+			h3 {
+				color: $White;
+				font-size: 25px;
+				font-family: $FontTitles;
+			}
+			h4 {
+				font-size: 25px;
+				font-family: $FontTitles;
+				color: $White;
+			}
+			p {
+				font-size: 17px;
+				font-family: $FontParagraph;
+				color: $TextContrast;
+			}
+		}
+		.section-info_2 {
+			width: 50%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			gap: 10px;
+
+			img {
+				width: 45px;
+				height: 45px;
+				border-radius: 50px;
+				padding: 10px;
+				background-color: $Balck;
+			}
+		}
+	}
+	.container-registrada {
+		width: 100%;
+		height: 5vh;
+		margin-top: 20px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+
+		p {
+			font-size: 15px;
+			font-family: $FontTitles;
+			color: $TextContrast;
+		}
+	}
+}
